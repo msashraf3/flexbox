@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="https://kit.fontawesome.com/1a5c33beb5.js" crossorigin="anonymous"></script>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            font-size: 24px;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            text-align: center;
+        }
+        .login-form input{
+            margin-top: 1em;
+            padding: 10px 20px;
+            border: 1px solid salmon;
+            border-radius: 5px;
+
+        }
+        input[type="submit"]{
+            border: 0;
+            background-color: blue;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+            <a href="">Contact US</a>
+            <a href="">About</a>
+            <a href="">Comments</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form class="login-form">
+            <h3>Please Login to continue</h3>
+            <input type="email" name="" id="" placeholder="Enter your E-mail" required>
+            <input type="password" name="" id="" placeholder="Enter your Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 </html>
